@@ -1,0 +1,22 @@
+{{ define "report" }}
+<html>
+    <head>
+        <title>Report</title>
+        <link rel="stylesheet" href="/static/css/global.css">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+        <!-- Charlist library -->
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+        <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
+        <!-- Charlist library -->
+
+    </head>
+    <body>
+        <h1>Hello {{ .Start }} - {{ .End }}</h1>
+
+        <div class="ct-chart ct-perfect-fourth"></div>
+
+        <script src="/static/js/main.js"></script>
+    </body>
+</html>
+{{ end }}
